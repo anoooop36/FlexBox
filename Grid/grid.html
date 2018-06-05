@@ -1,0 +1,43 @@
+<head></head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1"><p>Grid item1</p></div>
+        <div class="grid-item2"><p>Grid item2</p></div>
+        <div class="grid-item3"><p>Grid item3</p></div>
+        <div class="grid-item4"><p>Grid item4</p></div>
+    </div>
+</body>
+
+<style>
+    .grid-container {
+        border: solid black;
+        display: inline-grid;
+        grid-template-columns: 6em 1em 6em 1em 6em 1em 6em 1em 6em;
+        grid-template-rows: 6em 1em 6em;
+    }
+    .grid-item {
+        box-sizing: border-box;
+    }
+    .grid-item1 {
+        background-color: red;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .grid-item2 {
+        background-color: green;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .grid-item3 {
+        background-color: grey;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+    }
+    .grid-item4 {
+        background-color: yellow;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+    }
+</style>
